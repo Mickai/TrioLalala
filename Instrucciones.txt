@@ -1,24 +1,14 @@
 Hay tres branches de dev, cada una para una función:
 
-Para editar los mapas, se hará en la rama mapas, y una vez que se haya
-comprobado que funcionan y sean aprobados, los juntaremos con DEV. Para
-editar los cambios, solo se debe añadir MapInfo y el archivo del MAPXXX.
-El resto no habrán cambiado.
+Para editar los mapas, se hará en la rama branch, y una vez que se haya
+comprobado que funcionan y sean aprobados, los juntaremos con DEV.
 
 Las imágenes que se vayan a utilizar en el juego se añadirán en la rama
-imagen-sonido. Lo mismo para el sonido por razones obvias. Se deberán 
-importar al proyecto mediante rpgmaker, en esta rama, solo se guardará
-el cambio a los archivos externos a la carpeta DATA. Para utilizarlos en
-la base de datos habrá primero que hacer una "pull request" para dev.
+imagen-sonido. Lo mismo para el sonido por razones obvias.
 
 El scripting y la edición de la base de datos se harán en la rama database.
 Si por algún casual necesitais editar esto a la vez que haceis un mapa, haced
-este commit primero. 
+este commit primero.
 
-En resumen:
-
--> Editando mapas: MapInfos & MAPXXX
-
--> Editando imagen-sonido: archivos de imagen importados en las carpetas AUDIO/IMAGES/VIDEO
-
--> Editando scripts/base: solo archivos de lo que hayamos editado en la carpeta DATA
+Si solo estais creando mapas, no abrais la pestaña de editar la base de
+datos en RPGMAKER porque reescribirá todos los archivos.
